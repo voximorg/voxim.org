@@ -19,8 +19,8 @@
 		<p>Voxim is a new gaming initiative by <a href="http://holdengreen.org">Holden Green</a> and <a href="http://greenempower.org">The Green Empower Organization</a>. Voxim stands for voxel simulation.</p>
 
 		<p>At some point we will produce a game named Voxim that shall be a modernized and improved alternative to Minecraft that is released as free software.</p>
-		<p>It will not be a clone. Instead it will address many of my experiences and ideas from playing modded Minecraft intensly as a 10+ year old kid.</p>
-		<p>Voxim will be faster and more engineered than Minecraft. Both technically and artisticly.</p>
+		<p>It will not be a clone. Instead it will address many of my experiences and ideas from playing modded Minecraft intensely as a 10+ year old kid.</p>
+		<p>Voxim will be faster and more engineered than Minecraft. Both technically and artistically.</p>
 		<p>Many of the speed increases gained by engineering and design choices will be used to improve the fidelity of the game.</p>
 		<p>Voxim will target mid to high range hardware of the current era in the expectation that lower end hardware will catch up by the time that Voxim gains wider adoption.</p>
 
@@ -58,12 +58,12 @@
 				<p>We have some languages and ecosystems to choose from. I think C++ and Python could be a good match. I am concerned about C++'s usability and Python's speed and footprint.</p>
 				<p>C++ is a great language, but it requires expertise to work with directly, C is conceptually simpler, but in practice larger and more complex systems tend to benefit from being implemented in C++ rather than C.</p>
 				<p>Python is a great language and it is widely known. It shouldn't be an issue to integrate into our system. Notably Python does a lot of work for us already. Python has a wealth of existing libraries and it's more likely that most modder won't have to write any C/C++ code if we go with Python. Python however is slow and has a large footprint.</p>
-				<p>Lua is another option for a scripting lanuage. It's not a bad option as it has a concise implementation and comparatively introduces a smaller conceptual burden to our system. It is also faster, which is important. We may use in special contexts: A modder may want to express a time critical algorithm. The modder can't easily (or at all) do this in Python, but they rather not deal with C or C++. In this cenario the modder can express this algorithm in Lua and that can be compiled (or JIT compiled) to vary efficient machine code using LLVM. There are other cenarios where Lua may applicable. Lua does make a good configuration language as an example and Lua is very low stress and enjoyable langauge to use when appropriate.</p>
+				<p>Lua is another option for a scripting language. It's not a bad option as it has a concise implementation and comparatively introduces a smaller conceptual burden to our system. It is also faster, which is important. We may use in special contexts: A modder may want to express a time critical algorithm. The modder can't easily (or at all) do this in Python, but they rather not deal with C or C++. In this scenario the modder can express this algorithm in Lua and that can be compiled (or JIT compiled) to vary efficient machine code using LLVM. There are other scenarios where Lua may applicable. Lua does make a good configuration language as an example and Lua is very low stress and enjoyable language to use when appropriate.</p>
 				<p>Javascript is an option, but not one I am very fond of. It has familiarity and speed, but I think Lua outclasses it in many respects.</p>
 				<p>We may pursue a more custom solution.</p>
 				<p>I may write LLVM assembly if necessary.</p>
 				<p>We will implement a graphics renderer using Vulkan and/or Web GPU.</p>
-				<p>Generally Voxim will be decentralized and concurrent. This is important and it will help us scale both on existing and future hardware. It will be inform the design of the game; features and design which can be parallelized or decentralized will be preffered.</p>
+				<p>Generally Voxim will be decentralized and concurrent. This is important and it will help us scale both on existing and future hardware. It will be inform the design of the game; features and design which can be parallelized or decentralized will be preferred.</p>
 				<p>Voxim's design will generally be compact and efficient. Voxim will be designed in such a way as to keep the conceptual burden on those who work with the system low.</p>
 
 			<h3>Graphics</h3>
@@ -72,11 +72,16 @@
 				<p>Voxim will not target cutting edge graphics hardware or attempt photorealism, as I don't see that as worthwhile.</p>
 
 			<h3>Multiplayer</h3>
-				<p>Voxim will be fundementally designed for multiplayer.</p>
+				<p>Voxim will be fundamentally designed for multiplayer.</p>
 				<p>Voxim will be decentralized and will scale much better than Minecraft does during multiplayer.</p>
 
 			<h3>Generation</h3>
 				<p>There will be some mode of terrain generation.</p>
+
+			<h3>Schema</h3>
+				<p>Space exploration shall be a major theme of Voxim.</p>
+				<p>This isn't necessarily easy to do right. It will take effort and we will need to find a balance between respectable realism, good game play and pragmatism.</p>
+				<p>I'll be studying some more SciFi. I have watched Star Wars, Battlestar Galactica, Dragonauts, Galaxy Quest and now I am watching Star Trek. I'm sure I've seen other stuff too.</p>
 
 		<hr>
 
