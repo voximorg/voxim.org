@@ -5,56 +5,69 @@
 		<meta name="description" content="Voxim is a new gaming initiative by Holden Green and The Green Empower Organization. Voxim stands for voxel simulation.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="UTF-8">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="stylesheet.css"/>
   		<link rel="shortcut icon" href="./favicon.ico">
 	</head>
 	<body>
 		<h1>The Voxim Project</h1>
+		<hr class="t1">
 
 		<p>Voxim is a new gaming initiative by <a href="http://holdengreen.org">Holden Green</a> and <a href="http://greenempower.org">The Green Empower Organization</a>. Voxim stands for voxel simulation.</p>
 
-		<p>At some point we will produce a game named Voxim that shall be a modernized and improved alternative to Minecraft that is released as free software.</p>
-		<p>It will not be a clone. Instead it will address many of my experiences and ideas from playing modded Minecraft intensely as a 10+ year old kid.</p>
-		<p>Voxim will be faster and more engineered than Minecraft. Both technically and artistically.</p>
-		<p>Many of the speed increases gained by engineering and design choices will be used to improve the fidelity of the game.</p>
-		<p>Voxim will target mid to high range hardware of the current era in the expectation that lower end hardware will catch up by the time that Voxim gains wider adoption.</p>
+		<p>We are producing software under the name of Voxim.</p>
+		<p>Voxim is essentially a voxel simulation game.</p>
+		<p>It does not aim to be a clone of Minecraft or any other voxel game, but I will take cues from my experience playing and modding Minecraft in the development of this software.</p>
+		<p>The core of Voxim will act as a sort of kernel from which larger phenomena and code can derive themselves.</p>
+		<p>Voxim will be free software and it will be free of corporate control among other things.</p>
+		<p>My goal now is to produce a piece of software that is very useful in creating an interactive experience that is Voxim.</p>
+		<p>In this software there will be a number of features, systems and optimization that will facilitate something that is more engrossing and beautifully elaborate than any other voxel game has achieved.</p>
+		<p>Emphasis on the core development of Voxim is to create features and systems that are in and of themselves not conceptually complex or burdensome, but will still facilitate an especially high level of depth and fidelity within Voxim as it is elaborated.</p>
 
-		<ul>
-			<a href="https://github.com/voximorg">GitHub</a> <br>
-		</ul>
+		<hr class="t5">
+			<p>We have two organization profiles on <a href="https://github.com/voximorg">GitHub</a> and <a href="https://gitlab.com/voxim">GitLab</a></p>
+
+			<p>The GitHub repository is at <a href="https://github.com/voximorg/voxim">voximorg/voxim</a></p>
+		<hr class="t5">
 
 		<hr>
 
 		<h2>Draft</h2>
+		<hr class="t2">
 			<h3>Voxels</h3>
+			<hr class="t3">
 				<p>The smallest physical building unit in Voxim will be a voxel. It's size will be smaller than a block in Minecraft and probably about 1/8th the volume.</p>
 				<p>In Voxim voxels will have more rich interactions with their neighbors than in Minecraft.</p>
 				<p>Voxels will be allowed to bind to each other for example. This is apposed to most voxel simulations where voxels exist mostly independently from each other from a technical standpoint.</p>
 
 			<h3>Physics</h3>
+			<hr class="t3">
 				<p>Voxim will actually implement physics. A more developed physics system combined with more detail will allow for all types of mechanization being facilitated without any need for mods or abstractions.</p>
 
+				<p>The physics of planets and space will mimic real life.</p>
+				<p>A player will walk tangential to surface of a planet and be anchored to that planet by gravity.</p>
+				<p>Space travel will obey generally the same physics as in real life.</p>
+
 			<h3>Platform</h3>
+			<hr class="t3">
 				<p>Minecraft is very much being used as a platform and general purpose game engine, although it was (as far as I know) not intended for that.</p>
 				<p>Voxim will be free software. It should be forked and modded without stress and that is fine.</p>
 
 			<h3>Audio</h3>
+			<hr class="t3">
 				<p>Audio feedback and ambient and contextual sound will be well considered in the development of Voxim.</p>
 
 			<h3>.</h3>
+			<hr class="t3">
 				<p>Voxim will aim to implement physics and chemistry in a way that is more true to reality than Minecraft.</p>
 
 			<h3>Education</h3>
+			<hr class="t3">
 				<p>Voxim shall not be intended to be explicitly education in nature, but I do hope to see that Voxim provides an environment to aid in the socialization and learning of many.</p>
 
 			<h3>Implementation</h3>
-				<p>Voxim will likely be building using web technologies and infrastructure extended by Green Empower.</p>
-				<p>We will likely need to target Linux and Linux-like systems, as it seems unlikely that the entire game can our should be run inside Firefox.</p>
+			<hr class="t3">
+				<p>Voxim will likely be building using open cross platform technologies and infrastructure extended by Green Empower.</p>
+				<p>For graphics we can use either Vulkan or WebGPU.</p>
 				<p>We have some languages and ecosystems to choose from. I think C++ and Python could be a good match. I am concerned about C++'s usability and Python's speed and footprint.</p>
 				<p>C++ is a great language, but it requires expertise to work with directly, C is conceptually simpler, but in practice larger and more complex systems tend to benefit from being implemented in C++ rather than C.</p>
 				<p>Python is a great language and it is widely known. It shouldn't be an issue to integrate into our system. Notably Python does a lot of work for us already. Python has a wealth of existing libraries and it's more likely that most modder won't have to write any C/C++ code if we go with Python. Python however is slow and has a large footprint.</p>
@@ -67,26 +80,100 @@
 				<p>Voxim's design will generally be compact and efficient. Voxim will be designed in such a way as to keep the conceptual burden on those who work with the system low.</p>
 
 			<h3>Graphics</h3>
+			<hr class="t3">
 				<p>Voxim will use soft bright colors.</p>
 				<p>Voxim will utilize more modern rendering techniques and possibly some ray tracing.</p>
 				<p>Voxim will not target cutting edge graphics hardware or attempt photorealism, as I don't see that as worthwhile.</p>
 
 			<h3>Multiplayer</h3>
+			<hr class="t3">
 				<p>Voxim will be fundamentally designed for multiplayer.</p>
 				<p>Voxim will be decentralized and will scale much better than Minecraft does during multiplayer.</p>
 
 			<h3>Generation</h3>
+			<hr class="t3">
 				<p>There will be some mode of terrain generation.</p>
 
 			<h3>Schema</h3>
+			<hr class="t3">
 				<p>Space exploration shall be a major theme of Voxim.</p>
 				<p>This isn't necessarily easy to do right. It will take effort and we will need to find a balance between respectable realism, good game play and pragmatism.</p>
 				<p>I'll be studying some more SciFi. I have watched Star Wars, Battlestar Galactica, Dragonauts, Galaxy Quest and now I am watching Star Trek. I'm sure I've seen other stuff too.</p>
+				<p>Additionally we shall draw cosmic stuffs from the KPop groups WJSN and GWSN. They do a great job depicting vivid cosmic and mystic scenarios.</p>
+
+			<h3>Spacial Transcription</h3>
+			<hr class="t3">
+				<p>The space of Voxim should be recorded accross many machines in a decentralized network. Maybe like torrent or the blockchain.</p>
+				<p>Each player shall be allocated a cryptographic identity and some space on the shhared storage network.</p>
+				<p>Maybe a new player gets a new quadrant of space and the player can choose to keep that quadrant either privately stored on their machine or integrated with the network.</p>
+				<p>This quadrant will be cryptographically protected from tampering by malicious players.</p>
+				<p>Quadrants may need to be published to the broader network in commit cycles.</p>
 
 		<hr>
 
 		<h2>Concept Art</h2>
+		<hr class="t2">
 			<p>I'll do some concept art, but more immediately we will need more general aesthetic, styling and marketing.</p>
+
+		<hr>
+
+		<h1>Reference Resources</h1>
+		<hr class="t1">
+
+			<h2>Cryptography</h2>
+			<hr class="t2">
+					<a href="https://osf.io/nfxrj">Applied Cryptography</a>
+
+			<h2>Scripting Languages</h2>
+			<hr class="t2">
+					<h3>Lua</h3>
+							<a href="https://www.lua.org/manual/">Lua Reference Manuals</a>
+
+					<h3>Python</h3>
+							<a href="https://docs.python.org/3/reference/">Python3 Reference</a>
+
+			<h2>Graphics</h2>
+			<hr class="t2">
+					<h3>Vulkan</h3>
+					<hr class="t3">
+							<a href="https://www.khronos.org/registry/vulkan/specs/">Vulkan Specifications</a>
+
+
+
+			<h2>Math and Graphics</h2>
+			<hr class="t2">
+					<a href="https://www.cc.gatech.edu/~turk/math_gr.html">Book Reqs for Math and Graphics</a>
+
+			<h2>Documentation</h2>
+			<hr class="t2">
+					<h3>Doxygen</h3>
+					<hr class="t3">
+							<a href="https://www.doxygen.nl/manual/">Doxygen Manual</a>
+
+			<h2>Android</h2>
+			<hr class="t2">
+					<a href="https://developer.android.com/docs">Offical docs homepage</a>
+					<a href="https://developer.android.com/reference">Official reference homepage</a>
+
+			<h2>G-Truc</h2>
+			<hr class="t2">
+					<p><a href="http://www.g-truc.net/">G-Truc.net</a> - maker of GLM</p>
+					<a href="https://github.com/g-truc/glm">GLM (OpenGL Mathematics)</a>
+
+			<h2>Nothings</h2>
+			<hr class="t2">
+					<a href="http://nothings.org/">Nothings.org</a>
+					<a href="https://github.com/nothings/stb">STB Single Header C Libraries</a>
+
+			<hr class="t2">
+			<a href="https://www.gamedev.net/">GameDev.net</a>
+			<a href="https://xiph.org">Xiph</a>
+
+
+			<h2>Media</h2>
+			<hr class="t2">
+					<a href="https://www.youtube.com/watch?v=iTVfJ1j7o-A">시크릿 (Secret) _ 별빛달빛 (Starlight Moonlight) MV</a>
+		<hr>
 
 		<div id="footer">
 		<ul style="padding:0" id="index">
